@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <section class="my-navigation">
+            <!-- Начало Header'a-->
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MySite</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+              <li class="nav-item dropdown">
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" style="margin-right: 8px;">Поиск</button>
+              <button type="button" class="btn btn-outline-light me-2">Вход</button>
+              <button type="button" class="btn btn-outline-light me-2">Регистрация</button>
+              <button type="button" class="btn btn-outline-light">Выход</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Конец Header'a-->
+    </section>
+    <section class="my-carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-color: #343a40!important">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Заголовок поста номер 1</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="my-post-detail">
+        <div class="container">
+            <div class="row">
+                <!-- ЛЕВАЯ КОЛОНКА -->
+                <div class="col-lg-8 mt-3">
+                    <!-- ХЛЕБНЫЕ КРОШКИ -->
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Пост 1</li>
+                        </ol>
+                      </nav>
+                      <!-- КАРТИНКА -->
+                      <hr>
+                      <img class="img-fluid rounded" src="/img/first_img.jpg" alt="">
+                      <hr>
+                      <!-- ТЕЛО ПОСТА -->
+                      <p class="lead">Это основной абзац. Это основной абзац. Это основной абзац. 
+                        Это основной абзац. Это основной абзац. Это основной абзац. Это основной абзац. Это основной абзац. Это основной абзац. Это основной абзац.
+                    </p>
+                      <p>А это отипа остальные абзацы. А это отипа остальные абзацы. 
+                        А это отипа остальные абзацы. А это отипа остальные абзацы. А это отипа остальные абзацы. А это отипа остальные абзацы. 
+                        А это отипа остальные абзацы. А это отипа остальные абзацы.
+                    </p>
+                      <p>А это отипа остальные абзацы. А это отипа остальные абзацы. 
+                        А это отипа остальные абзацы. А это отипа остальные абзацы. А это отипа остальные абзацы. А это отипа остальные абзацы. 
+                        А это отипа остальные абзацы. А это отипа остальные абзацы. А это отипа остальные абзацы.
+                    </p>
+                    <!-- <div class="d-flex justify-content-end">
+                        <a href="" class="badge text-bg-info me-1">#NuxtJS</a>
+                        <a href="" class="badge text-bg-info">#CSS</a>
+                    </div> -->
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <div class="lead">Автор: Боков Артём</div>
+                        <div>Опубликовано: 12.12.2024</div>
+                    </div>
+                    <hr>
+                    <!-- КОММЕНТАРИИ -->
+                    <div class="card my-4">
+                        <h5 class="card-header">Прокомментируйте:</h5>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <textarea class="form-control mb-3" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="flex-shrink-0">
+                            <img class="rounded-circle" src="http://placehold.it/50x50" alt="">
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            <h5 class="mt-0">Зулия Раздыбайло</h5>
+                                Мое очень важное мнение по данной статье. Мое очень важное мнение по данной статье. Мое очень важное мнение по данной статье. Мое очень важное мнение по данной статье. Мое очень важное мнение по данной статье.
+                        </div>
+                    </div>
+                </div>
+                <!-- ПРАВАЯ КОЛОНКА -->
+                <div class="col-md-4">
+                    <div class="card my-4">
+                        <h5 class="card-header">Теги</h5>
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap">
+                                <a href="" class="m-2 h5 text-primary">#CSS</a>
+                                <a href="" class="m-2 h5 text-primary">#JavaScript</a>
+                                <a href="" class="m-2 h5 text-primary">#DRF</a>
+                                <a href="" class="m-2 h5 text-primary">#NuxtJS</a>
+                                <a href="" class="m-2 h5 text-primary">#Django</a>
+                                <a href="" class="m-2 h5 text-primary">#VueJS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card my-4">
+                        <h5 class="card-header">Последние статьи</h5>
+                        <div class="card-body">
+                            <h5 class="card-title">Раз пост</h5>
+                            <p class="card-text">Какой-то вступительный текст. Какой-то вступительный текст. Какой-то вступительный текст.</p>
+                            <a href="#" class="card-link">Ссылка на статью</a>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Два пост</h5>
+                            <p class="card-text">Какой-то вступительный текст. Какой-то вступительный текст. Какой-то вступительный текст.</p>
+                            <a href="#" class="card-link">Ссылка на статью</a>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Три пост</h5>
+                            <p class="card-text">Какой-то вступительный текст. Какой-то вступительный текст. Какой-то вступительный текст.</p>
+                            <a href="#" class="card-link">Ссылка на статью</a>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Четыре пост</h5>
+                            <p class="card-text">Какой-то вступительный текст. Какой-то вступительный текст. Какой-то вступительный текст.</p>
+                            <a href="#" class="card-link">Ссылка на статью</a>
+                        </div>
+                        <hr>
+                        <div class="card-body">
+                            <h5 class="card-title">Пять пост</h5>
+                            <p class="card-text">Какой-то вступительный текст. Какой-то вступительный текст. Какой-то вступительный текст.</p>
+                            <a href="#" class="card-link">Ссылка на статью</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ФУТЕР -->
+    <section class="my-footer mt-5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+          <symbol id="telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+          </symbol>
+        </svg>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-sm-12 my-3">
+              <a href="/" class="text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#python"/></svg>
+              </a>
+              <span class="text-body-secondary">&copy; 2024 Агентство по разработке потрясных сайтов на bootstrap, drf и nuxtJS.</span>
+            </div>
+            <div class="col-lg-3 col-sm-12 my-3 d-flex justify-content-end">
+              <ul class="nav list-unstyled">
+                <li class=""><a class="text-body-secondary" href="https://t.me/Anardest"><svg class="bi" width="24" height="24"><use xlink:href="#telegram"/></svg></a></li>
+                <li class="ms-2"><a class="text-end" href="#">Наверх</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
