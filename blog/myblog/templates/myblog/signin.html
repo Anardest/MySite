@@ -1,0 +1,50 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %}Авторизация{% endblock %}
+
+{% block content %}
+<!-- ОСНОВНАЯ ЧАСТЬ -->
+ <section class="my-reg-form">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- ХЛЕБНЫЕ КРОШКИ -->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mt-3 ms-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Форма авторизации</li>
+                </ol>
+            </nav>  
+            <hr>  
+            <div class="col-6">
+                <p class="lead" style="text-align: center;">Для входа на сайт введите логин и пароль:</p>
+                {% if form.errors %}
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <form method="post" action="{% url 'signin' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="inputUsername">Ваше имя</label>
+                        {{ form.username }}
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword">Ваш пароль</label>
+                        {{ form.password }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </section>
+{% endblock %}
